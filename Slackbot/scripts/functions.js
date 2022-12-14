@@ -4,8 +4,8 @@ module.exports = function(robot) {
     });
     //You can set the bot to reply in specific channel
     robot.hear(/kubernetes/i, function(res) {
-      var room;
-      room = "devops";
+    //  var room;
+     // room = "devops";
       return robot.messageRoom(room, "Minikube is used for our handson.");
     });
     robot.respond(/!Jira (.*)/i, function(res) {
